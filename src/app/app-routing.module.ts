@@ -8,7 +8,7 @@ import { LearnComponent } from './learn/learn.component';
 import { AufgabeComponent } from './aufgabe/aufgabe.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: 'main', component: MainComponent },
   { path: 'learn', component: LearnComponent },
   { path: 'aufgabe', component: AufgabeComponent },

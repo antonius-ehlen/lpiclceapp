@@ -1,0 +1,342 @@
+[
+  {
+    "qid": 1,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which command is used to set the hostname of the local system? (Specify only the command without any",
+      "path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "hostname"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 3,
+    "qtyp": "fi",
+    "qtxt": [
+      "What command, depending on its options, can display the open TCP connections, the routing tables, as",
+      "well as network interface statistics? (Specify only the command without any path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "netstat"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 4,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which command included in NetworkManager is a curses application which provides easy acces to the",
+      "NetworkManager on the command line? (Specify only the command without any path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "nmtui"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 19,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which file, if present, must contain all users that are allowed to use the cron scheduling system? (Specify",
+      "the full name of the file, including path.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "/etc/cron.allow"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 27,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which command included in systemd supports selecting messages from the systemd journal by criteria",
+      "such as time or unit name? (Specify only the command without any path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "journalctl"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 29,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which command must be run after adding a new email alias to the configuration in order to make this",
+      "change effective? (Specify the command without any path but including all required parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "newaliases"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 33,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which command, available with all sendmail-compatible MTAs, is used to list the contents of the MTA's",
+      "mail queue? (Specify only the command without any path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "mailq"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 34,
+    "qtyp": "fi",
+    "qtxt": [
+      "What is the top-level directory which contains the configuration files for CUPS? (Specify the full path to",
+      "the directory.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "/etc/cups"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 37,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which option in the /etc/ntp.conf file specifies an external NTP source to be queried for time information?",
+      "(Specify only the option without any values or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "server"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 46,
+    "qtyp": "fi",
+    "qtxt": [
+      "What command list the aliases defined in the current Bash shell? (Specify only the command without any",
+      "path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "alias"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 54,
+    "qtyp": "fi",
+    "qtxt": [
+      "When using X11 forwarding in SSH, what environment variable is automatically set in the remote shell in",
+      "order to help applications to connect to the correct X11 server? (Specify only the environment variable",
+      "without any additional commands or values.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "DISPLAY"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 55,
+    "qtyp": "fi",
+    "qtxt": [
+      "The presence of what file will temporarily prevent all users except root from logging into a system?",
+      "(Specify the full name of the file, including path.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "/etc/nologin"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 64,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which file is processed by newaliases? (Specify the full name of the file, including path.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "/etc/aliases"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 71,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which command is used to sync the hardware clock to the system clock? (Specify only the command",
+      "without any path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "hwclock"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 87,
+    "qtyp": "fi",
+    "qtxt": [
+      "What command is used to add OpenSSH private keys to a running ssh-agent instance? (Specify the",
+      "command name only without any path.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "ssh-add"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 88,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which directory holds configuration files for xinetd services? (Specify the full path to the directory.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "/etc/xinetd.d/"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 90,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which parameter of the ssh command specifies the location of the private key used for login attempts?",
+      "(Specify only the option name without any values or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "-i"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 94,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which parameter is missing in the command",
+      "  ip link set ____ dev eth0",
+      "to activate the previously inactive network interface eth0? (Specify the parameter only without any",
+      "command, path or additional options.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "up"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 102,
+    "qtyp": "fi",
+    "qtxt": [
+      "What command enables a network interface according to distribution-specific configuration, such as",
+      "  /etc/network/interfaces",
+      "or ",
+      "  /etc/sysconfig/network-scripts/ifcfg-eth0? ",
+      "(Specify only the command without any path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "ifup"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 107,
+    "qtyp": "fi",
+    "qtxt": [
+      "What option to useradd creates a new user's home directory and provisions it with a set of standard files?",
+      "(Specify only the option name without any values or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "-m"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 118,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which environment variable is used by an X11 client to determine the X Server to connect to? (Specify",
+      "only the variable name without any preceding commands or values.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "DISPLAY"
+        ]
+      }
+    ],
+    "qinfo": []
+  }
+]
