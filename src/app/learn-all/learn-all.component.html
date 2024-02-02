@@ -1,0 +1,40 @@
+<h5 class="h5red">Learn-All works!</h5>
+
+<div *ngFor="let q of questions">
+  {{q.qid}}: - {{q.qtyp}} <br>
+  {{q.qtxt}} <br>
+  <div class="answerBox">
+    <div *ngIf="!toggleAnswer">
+      <div *ngFor="let a of q.qanswers">
+        <span *ngIf="q.qtyp == 'fi'">??: <br></span>
+        <span *ngIf="q.qtyp != 'fi'">{{a.txt}} <br></span>
+      </div>
+    </div>
+    <div *ngIf="toggleAnswer">
+      <!-- show correct answers of selected question -->
+      <div *ngIf="q.qid === currentq">
+        <div *ngFor="let a of q.qanswers">
+          <span *ngIf="a.correct" class="correct">
+            {{a.txt}} <br>
+          </span>
+          <div *ngIf="!a.correct">
+            <span *ngIf="q.qtyp == 'fi'">??: <br></span>
+            <span *ngIf="q.qtyp != 'fi'">{{a.txt}} <br></span>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!(q.qid === currentq)">
+        <div *ngFor="let a of q.qanswers">
+          <span>
+            <span *ngIf="q.qtyp == 'fi'">??: <br></span>
+            <span *ngIf="q.qtyp != 'fi'">{{a.txt}} <br></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button *ngIf="!(q.qid === currentq)" (click)="toggleCorrectAns(q.qid)">Correct?</button>
+  <button *ngIf="!toggleAnswer && (q.qid === currentq)" (click)="toggleCorrectAns(q.qid)">Correct?</button>
+  <button *ngIf="toggleAnswer && (q.qid === currentq)" (click)="toggleCorrectAns(q.qid)" class="correct">Correct</button>
+  <hr>
+</div>

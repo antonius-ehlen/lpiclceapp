@@ -12,23 +12,36 @@
         <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
           Learning Mode
         </button>
-			<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-				<button ngbDropdownItem routerLink="/learn">Question List (multiple choice) ia</button>
-				<button ngbDropdownItem>Question List (all) nok</button>
-				<button ngbDropdownItem>Question List (fill in) nok</button>
-				<button ngbDropdownItem>Question List (single choice) nok</button>
-				<button ngbDropdownItem>Single Question Mode nok</button>
-				<!-- <button ngbDropdownItem>Something else is here</button> -->
-			</div>
-		</div>
-	</div>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem routerLink="/check/list/mc">Question List MC (list)</button>
+          <button ngbDropdownItem routerLink="/check/one/mc">Question List MC (one)</button>
+          <button ngbDropdownItem routerLink="/check/list/sc">Question List SC (list)</button>
+          <button ngbDropdownItem routerLink="/check/one/sc">Question List SC (one)</button>
+          <button ngbDropdownItem routerLink="/check/list/fi">Question List FI (list)</button>
+          <button ngbDropdownItem routerLink="/check/one/fi">Question List FI (one)</button>
+          <button ngbDropdownItem routerLink="/check/list/all">Question List ALL (list)</button>
+        </div>
+      </div>
+      <div ngbDropdown class="d-inline-block">
+        <button type="button" class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>
+          Check Mode
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem routerLink="/learn/list/mc">Question List MC - in arbeit</button>
+          <button ngbDropdownItem routerLink="/learn/list/sc">Question List SC - in arbeit</button>
+          <button ngbDropdownItem routerLink="/learn/list/fi">Question List FI - in arbeit</button>
+          <button ngbDropdownItem routerLink="/learn/list/all">Question List ALL - in arbeit</button>
+        </div>
+      </div>
+    </div>
 
-	<div class="col text-end">
-    <div ngbDropdown placement="top-end" class="d-inline-block">
-      <button type="button" class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>Aufgabenstellung</button>
-			<div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-        <button ngbDropdownItem>hier geht's dahin nok</button>
-				<!-- <button ngbDropdownItem>Another Action</button>
+    <div class="col text-end">
+      <div ngbDropdown placement="top-end" class="d-inline-block">
+        <button type="button" class="btn btn-outline-primary" id="dropdownBasic2"
+          ngbDropdownToggle>Aufgabenstellung</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+          <button ngbDropdownItem>hier geht's dahin nok</button>
+          <!-- <button ngbDropdownItem>Another Action</button>
           <button ngbDropdownItem>Something else is here</button> -->
         </div>
       </div>
@@ -39,6 +52,6 @@
   <router-outlet></router-outlet>
   <hr>
 
-  <h6>Author: antonius ehlen        2024 01 30</h6>
+  <h6>Author: antonius ehlen 2024 01 30</h6>
 
 </div>

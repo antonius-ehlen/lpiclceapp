@@ -1,0 +1,34 @@
+<p>learn-sc-one works!</p>
+<h5 class="h5red">Learn-All works!</h5>
+
+<button (click)="firstQuestion()" class="btn btn-outline-primary">first</button>
+<button (click)="prevQuestion()" class="btn btn-outline-secondary">prev</button> -
+<button *ngIf="!toggleAnswer" (click)="this.toggleAnswer = !this.toggleAnswer"
+  class="btn btn-outline-success">Correct?</button>
+<button *ngIf="toggleAnswer" (click)="this.toggleAnswer = !this.toggleAnswer"
+  class="btn btn-outline-success">Correct</button> -
+<button (click)="nextQuestion()" class="btn btn-outline-secondary">next</button>
+<button (click)="lastQuestion()" class="btn btn-outline-primary">last</button>
+<br>
+
+{{ q.qid}}: <br>{{ q.qtxt}}
+<div class="answerBox">
+  <div *ngIf="!toggleAnswer">
+    <div *ngFor="let a of q.qanswers">
+      {{a.txt}} <br>
+      <!-- {{a.txt}} --- {{a.correct}} <br> -->
+    </div>
+  </div>
+  <div *ngIf="toggleAnswer">
+    <div *ngFor="let a of q.qanswers">
+      <span *ngIf="a.correct" class="correct">
+        {{a.txt}} <br>
+        <!-- {{a.txt}} --- {{a.correct}} <br> -->
+      </span>
+      <span *ngIf="!a.correct">
+        {{a.txt}} <br>
+        <!-- {{a.txt}} --- {{a.correct}} <br> -->
+      </span>
+    </div>
+  </div>
+</div>

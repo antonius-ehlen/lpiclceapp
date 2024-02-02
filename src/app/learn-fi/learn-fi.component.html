@@ -1,0 +1,37 @@
+<p>learn-fi works!</p>
+<h5 class="h5red">Learn-All works!</h5>
+
+<div *ngFor="let q of questions">
+  {{q.qid}}: {{q.qtxt}} <br>
+  <div class="answerBox">
+    <div *ngIf="!toggleAnswer">
+      <div *ngFor="let a of q.qanswers">
+        ??: <br>
+      </div>
+    </div>
+    <div *ngIf="toggleAnswer">
+      <!-- show correct answers of selected question -->
+      <div *ngIf="q.qid === currentq">
+        <div *ngFor="let a of q.qanswers">
+          <span *ngIf="a.correct" class="correct">
+            ??:  {{a.txt}} <br>
+          </span>
+          <span *ngIf="!a.correct">
+            ??:  <br>
+          </span>
+        </div>
+      </div>
+      <div *ngIf="!(q.qid === currentq)">
+        <div *ngFor="let a of q.qanswers">
+          <span>
+            ??:  <br>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button *ngIf="!(q.qid === currentq)" (click)="toggleCorrectAns(q.qid)">Correct?</button>
+  <button *ngIf="!toggleAnswer && (q.qid === currentq)" (click)="toggleCorrectAns(q.qid)">Correct?</button>
+  <button *ngIf="toggleAnswer && (q.qid === currentq)" (click)="toggleCorrectAns(q.qid)" class="correct">Correct</button>
+   <hr>
+</div>
