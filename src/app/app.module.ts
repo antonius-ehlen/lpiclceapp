@@ -15,6 +15,11 @@ import { LearnAllComponent } from './learn-all/learn-all.component';
 import { LearnMcOneComponent } from './learn-mc-one/learn-mc-one.component';
 import { LearnScOneComponent } from './learn-sc-one/learn-sc-one.component';
 import { LearnFiOneComponent } from './learn-fi-one/learn-fi-one.component';
+import { CheckMcComponent } from './check-mc/check-mc.component';
+import { CheckScComponent } from './check-sc/check-sc.component';
+import { CheckFiComponent } from './check-fi/check-fi.component';
+import { CheckAllComponent } from './check-all/check-all.component';
+import { LearnAllOneComponent } from './learn-all-one/learn-all-one.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +34,11 @@ import { LearnFiOneComponent } from './learn-fi-one/learn-fi-one.component';
     LearnMcOneComponent,
     LearnScOneComponent,
     LearnFiOneComponent,
+    CheckMcComponent,
+    CheckScComponent,
+    CheckFiComponent,
+    CheckAllComponent,
+    LearnAllOneComponent,
 
   ],
   imports: [

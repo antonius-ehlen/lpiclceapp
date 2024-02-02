@@ -9,7 +9,8 @@ export interface QuestionMc {
 
 export interface Answer {
     "txt": string[],
-    "correct": boolean
+    "correct": boolean,
+    "selected": boolean
 }
 
 export interface Question {

@@ -13,6 +13,11 @@ import { LearnAllComponent } from './learn-all/learn-all.component';
 import { LearnMcOneComponent } from './learn-mc-one/learn-mc-one.component';
 import { LearnScOneComponent } from './learn-sc-one/learn-sc-one.component';
 import { LearnFiOneComponent } from './learn-fi-one/learn-fi-one.component';
+import { LearnAllOneComponent } from './learn-all-one/learn-all-one.component';
+import { CheckMcComponent } from './check-mc/check-mc.component';
+import { CheckScComponent } from './check-sc/check-sc.component';
+import { CheckFiComponent } from './check-fi/check-fi.component';
+import { CheckAllComponent } from './check-all/check-all.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
@@ -24,6 +29,11 @@ const routes: Routes = [
   { path: 'learn/one/mc', component: LearnMcOneComponent },
   { path: 'learn/one/sc', component: LearnScOneComponent },
   { path: 'learn/one/fi', component: LearnFiOneComponent },
+  { path: 'learn/one/all', component: LearnAllOneComponent },
+  { path: 'check/mc', component: CheckMcComponent },
+  { path: 'check/sc', component: CheckScComponent },
+  { path: 'check/fi', component: CheckFiComponent },
+  { path: 'check/all', component: CheckAllComponent },
   { path: 'aufgabe', component: AufgabeComponent },
 ];
 

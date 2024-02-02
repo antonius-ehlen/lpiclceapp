@@ -1,0 +1,17 @@
+.correct {
+  color:forestgreen;
+  font-weight: bold;
+}
+.correct2 {
+  color: greenyellow;
+  font-weight: bold;
+}
+.notcorrect {
+  color: red;
+}
+.answerBox {
+  margin-left: 1em;
+}
+.h5red {
+  color: red
+}

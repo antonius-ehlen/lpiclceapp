@@ -1,0 +1,59 @@
+<h5 class="h5red">Check-Mc works!</h5>
+
+<button (click)="firstQuestion()" class="btn btn-outline-primary">first</button>
+<button (click)="prevQuestion()" class="btn btn-outline-secondary">prev</button> -
+<button *ngIf="!toggleAnswer" (click)="this.toggleAnswer = !this.toggleAnswer"
+  class="btn btn-outline-success">Correct?</button>
+<button *ngIf="toggleAnswer" (click)="this.toggleAnswer = !this.toggleAnswer"
+  class="btn btn-outline-success">Correct</button> -
+<button (click)="nextQuestion()" class="btn btn-outline-secondary">next</button>
+<button (click)="lastQuestion()" class="btn btn-outline-primary">last</button>
+<br>
+
+{{ q.qid}}: <br>{{ q.qtxt}}
+<div class="answerBox">
+  <div *ngIf="!toggleAnswer">
+    <div *ngFor="let a of q.qanswers">
+      <span *ngIf="a.selected">
+        <input type="checkbox" name="{{q.qid}}" (click)="a.selected = !a.selected" id="" checked>
+        <!-- {{a.txt}} <br> -->
+        {{a.txt}} --- {{a.correct}} <br>
+      </span>
+      <span *ngIf="!a.selected">
+        <input type="checkbox" name="{{q.qid}}" (click)="a.selected = !a.selected" id="">
+        <!-- {{a.txt}} <br> -->
+        {{a.txt}} --- {{a.correct}} <br>
+      </span>
+    </div>
+  </div>
+  <!-- show answers -->
+  <div *ngIf="toggleAnswer">
+    <div *ngFor="let a of q.qanswers">
+      <!-- selected == correct -->
+      <span *ngIf="a.selected && a.correct" class="correct">
+        <input type="checkbox" name="{{q.qid}}" (click)="a.selected = !a.selected" id="" checked disabled>
+        <!-- {{a.txt}} <br> -->
+        {{a.txt}} --- {{a.correct}} <br>
+      </span>
+      <!-- selected != correct -->
+      <span *ngIf="a.selected && !a.correct" class="notcorrect">
+        <input type="checkbox" name="{{q.qid}}" (click)="a.selected = !a.selected" id="" checked disabled>
+        <!-- {{a.txt}} <br> -->
+        {{a.txt}} --- {{a.correct}} <br>
+      </span>
+      <!-- not selected & correct -->
+      <span *ngIf="!a.selected && a.correct" class="correct2">
+        <input type="checkbox" name="{{q.qid}}" (click)="a.selected = !a.selected" id=""  disabled>
+        <!-- {{a.txt}} <br> -->
+        {{a.txt}} --- {{a.correct}} <br>
+      </span>
+      <!-- not selected & !correct -->
+      <span *ngIf="!a.selected && !a.correct" >
+        <input type="checkbox" name="{{q.qid}}" (click)="a.selected = !a.selected" id=""  disabled>
+        <!-- {{a.txt}} <br> -->
+        {{a.txt}} --- {{a.correct}} <br>
+      </span>
+    </div>
+  </div>
+</div>
+
